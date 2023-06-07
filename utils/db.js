@@ -24,7 +24,7 @@ async function disconnect() {
   }
 }
 
-const createCollection = mongoose.connection; 
-const db = { connect, disconnect, createCollection };
+const Connection = mongoose.connection; 
+const db = { connect, disconnect,  Connection};
 
 module.exports = {db};
